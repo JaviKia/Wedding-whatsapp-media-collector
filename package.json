@@ -1,0 +1,47 @@
+{
+  "name": "wedding-whatsapp-media-collector",
+  "version": "1.0.0",
+  "description": "WhatsApp bot to collect wedding photos/videos and sync to Google Drive",
+  "main": "src/bot.js",
+  "scripts": {
+    "start": "node src/bot.js",
+    "dev": "nodemon src/bot.js",
+    "setup": "node scripts/setup.js",
+    "test-drive": "node src/testGoogleDrive.js",
+    "qr": "node generate-wedding-qr.js",
+    "qr:svg": "node generate-svg-qr.js",
+    "delete": "node delete-wedding-files.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "dependencies": {
+    "whatsapp-web.js": "^1.24.0",
+    "qrcode-terminal": "^0.12.0",
+    "qrcode": "^1.5.3",
+    "googleapis": "^126.0.1",
+    "express": "^4.18.2",
+    "multer": "^2.0.0",
+    "fs-extra": "^11.2.0",
+    "moment": "^2.29.4",
+    "dotenv": "^16.3.1",
+    "puppeteer": "^22.8.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "jest": "^29.7.0"
+  },
+  "overrides": {
+    "tar-fs": "^3.0.4",
+    "ws": "^8.17.1"
+  },
+  "keywords": [
+    "whatsapp",
+    "wedding",
+    "photos",
+    "google-drive",
+    "qr-code"
+  ],
+  "author": "Wedding Media Collector",
+  "license": "MIT"
+} 
