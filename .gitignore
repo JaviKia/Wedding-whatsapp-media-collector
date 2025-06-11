@@ -141,5 +141,5 @@ examples/
 *.backup
 *.bak
 
-# Service files
-*.service 
+# Service files (exclude systemd service files but allow project-specific ones)
+# *.service 

@@ -1,0 +1,18 @@
+[Unit]
+Description=Wedding Bot WhatsApp Service
+After=network.target
+
+[Service]
+Type=simple
+User=j.martinez
+WorkingDirectory=/home/j.martinez/wedding-bot
+Environment=NODE_ENV=production
+ExecStart=/home/j.martinez/wedding-bot/start-bot.sh
+Restart=always
+RestartSec=10
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=wedding-bot
+
+[Install]
+WantedBy=multi-user.target 
